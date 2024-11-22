@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=devicewidth, initial-scale=1">
     <meta name="author" content="Samuel Reutcky">
-    <meta name="description" content="My Web Project">
-    <meta name="keywords" content="html, css, seo, web devlopment">
-    <title>CHANGE TITLE</title>
+    <meta name="description" content="Tip Calculator">
+    <meta name="keywords" content="html, css, javascript, tip calculator">
+    <title>Tip Calculator</title>
     <link rel="icon" href="./src/img/favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,27 @@
   <body>
     <main>
       <div class="container">
-        
+        <h1>Tip Calculator</h1>
+        <div class="calculator">
+          <label for="bill-amount">Bill Amount:</label>
+          <input type="text" class="bill-amount" placeholder="Enter bill amount">
+          
+          <label for="tip-percentage">Tip Percentage:</label>
+          <input type="text" class="tip-percentage" placeholder="Enter tip percentage">
+          
+          <label for="number-of-people">Number of People:</label>
+          <input type="text" class="number-of-people" placeholder="Enter number of people">
+          
+          <button class="calculate-tip">Calculate Tip</button>
+          
+          <div class="result">
+            <p>PST (7%): $<span class="pst-amount">0.00</span></p>
+            <p>GST (5%): $<span class="gst-amount">0.00</span></p>
+            <p>Tip Amount: $<span class="tip-amount">0.00</span></p>
+            <p>Total Amount: $<span class="total-amount">0.00</span></p>
+            <p>Amount per Person: $<span class="amount-per-person">0.00</span></p>
+          </div>
+        </div>
       </div>
     </main>
   </body>
