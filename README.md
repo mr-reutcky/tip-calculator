@@ -30,7 +30,7 @@ The HTML layout of the Tip Calculator contains input fields for the bill amount,
 
 ### HTML Snippet:
 
-```html
+``` HTML
 <label for="bill-amount">Bill Amount:</label>
 <input type="text" class="bill-amount" placeholder="Enter bill amount" />
 
@@ -53,11 +53,11 @@ The HTML layout of the Tip Calculator contains input fields for the bill amount,
 ```
 ---
 
-# CSS Styling for Tip Calculator
+## 2. Style Overview
 
 This section covers the CSS styling used for the **Tip Calculator** project. The design focuses on creating a clean, user-friendly interface with modern styling practices.
 
-## Styling Overview
+### Styling Overview
 
 The Tip Calculator is styled using **CSS Flexbox** for layout and a **responsive design** for smooth interaction. Below are the key styling elements:
 
@@ -77,7 +77,7 @@ The Tip Calculator is styled using **CSS Flexbox** for layout and a **responsive
 ### Body Styling
 The body is styled to center the content both vertically and horizontally, while also setting the background color and font.
 
-```css
+``` CSS
 body {
   font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
   background-color: #121212;
@@ -91,7 +91,7 @@ body {
 ```
 ---
 
-##JavaScript Code
+## 3. JavaScript Code
 
 The JavaScript is the core of the Tip Calculator. It handles user input validation, performs the necessary calculations 
 (PST, GST, tip amount, total, etc.), and updates the user interface with the results.
@@ -108,7 +108,7 @@ Key JavaScript Functions
  -clearInputs: Clears the input fields.
 
 ### isValidNumber Function
-```JavaScript
+``` JavaScript
 function isValidNumber(value) {
   return !isNaN(value) && value.trim() !== '';
 }
