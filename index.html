@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=devicewidth, initial-scale=1">
-    <meta name="author" content="Samuel Reutcky">
-    <meta name="description" content="Tip Calculator">
-    <meta name="keywords" content="html, css, javascript, tip calculator">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devicewidth, initial-scale=1" />
+    <meta name="author" content="Samuel Reutcky" />
+    <meta name="description" content="Tip Calculator" />
+    <meta name="keywords" content="html, css, javascript, tip calculator" />
     <title>Tip Calculator</title>
-    <link rel="icon" href="./src/img/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="./src/img/favicon.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css"
+      media="all"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <script src="./src/js/script.js" defer></script>
   </head>
   <body>
@@ -20,24 +27,43 @@
       <div class="container calculator-body">
         <h1>Tip Calculator</h1>
         <div class="calculator">
+          <!-- Input for bill amount -->
           <label for="bill-amount">Bill Amount:</label>
-          <input type="text" class="bill-amount" placeholder="Enter bill amount">
-          
+          <input
+            type="text"
+            class="bill-amount"
+            placeholder="Enter bill amount"
+          />
+
+          <!-- Input for tip percentage -->
           <label for="tip-percentage">Tip Percentage:</label>
-          <input type="text" class="tip-percentage" placeholder="Enter tip percentage">
-          
+          <input
+            type="text"
+            class="tip-percentage"
+            placeholder="Enter tip percentage"
+          />
+
+          <!-- Input for number of people -->
           <label for="number-of-people">Number of People:</label>
-          <input type="text" class="number-of-people" placeholder="Enter number of people">
-          
+          <input
+            type="text"
+            class="number-of-people"
+            placeholder="Enter number of people"
+          />
+
+          <!-- Button to calculate the tip -->
           <button class="calculate-tip">Calculate Tip</button>
-          
+
+          <!-- Display the results -->
           <div class="result">
             <p>PST (7%): $<span class="pst-amount">0.00</span></p>
             <p>GST (5%): $<span class="gst-amount">0.00</span></p>
             <p>Total Before Tip: $<span class="total-before-tip">0.00</span></p>
             <p>Tip Amount: $<span class="tip-amount">0.00</span></p>
             <p>Total Amount: $<span class="total-amount">0.00</span></p>
-            <p class="per-person">Amount per Person: $<span class="amount-per-person">0.00</span></p>
+            <p class="per-person">
+              Amount per Person: $<span class="amount-per-person">0.00</span>
+            </p>
           </div>
         </div>
       </div>
