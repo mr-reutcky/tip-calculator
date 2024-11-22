@@ -90,7 +90,9 @@ body {
 }
 ```
 ---
+
 ##JavaScript Code
+
 The JavaScript is the core of the Tip Calculator. It handles user input validation, performs the necessary calculations 
 (PST, GST, tip amount, total, etc.), and updates the user interface with the results.
 
