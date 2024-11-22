@@ -69,9 +69,23 @@ button:hover {
 
 .result {
   margin-top: 20px;
+  text-align: left;
 }
 
 .result p {
+  font-size: 1.2rem;
   margin: 5px 0;
   color: #e0e0e0;
+}
+
+.result p.amount-per-person, .result p.per-person {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #27a027;
+}
+
+.result p.total-amount {
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
 }
